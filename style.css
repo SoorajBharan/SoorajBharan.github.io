@@ -1,0 +1,293 @@
+body {
+	font-family : "Cormorant", sans-serif;
+	font-size : 32px;
+	background-color : #DDE7ED;
+	max-width : 1600px;
+	margin : 0 auto;
+}
+
+#box{
+	width:100px;
+	height:100px;
+	background : green;
+}
+
+.sideBar{
+	position : fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 300px;
+	background-color: white;
+	z-index: 1000;
+	overflow-x: hidden;
+	transition: left 0.3s ease;
+	transform: translateX(0);
+	padding: 10px;
+}
+
+.sideBar.collapsed{
+	transform: translateX(-100%);
+}
+
+.sideBar-hidden{
+	display: fixed;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.sideBarCloseBtn{
+	font-size: 40px;
+	cursor:pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.sideBar-header{
+	display: inline-block;
+}
+
+.main{
+	padding: 20px;
+	position: relative;
+}
+
+.main-btn{
+	font-size: 24px;
+	background: white;
+	border: none;
+	cursor: pointer;
+}
+
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 900;
+	transition: opacity 0.3s ease;
+}
+
+.overlay.hidden {
+	display: none;
+}
+
+.navBar{
+	display:inline-block;
+	background-color : #57596B;
+}
+
+.icons a i{
+	color: black;
+}
+
+.contact{
+	width: 100%;
+	background-color: #9A9FA3;
+	color: black;
+	display: inline-block;
+	padding: 20px;
+}
+
+#contactBox{
+	text-align: center;
+	justify-content: center;
+	color: white;
+	padding: 10px;
+}
+
+.contactRow{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+#research {
+	padding: 20px;
+}
+
+#education {
+	padding: 20px;
+}
+
+.timeline {
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.timeline::before {
+	content: '';
+	position: absolute;
+	left: 5%;
+	top: 0;
+	bottom: 0;
+	width: 4px;
+	background-color: #148F75;
+	transform: translateX(-50%);
+}
+
+.timeline-item {
+	position: relative;
+	margin-bottom: 30px;
+	/*padding-left: 40px;*/
+}
+
+.timeline-dot {
+	position: absolute;
+	left: 12px;
+	top: 5px;
+	width: 20px;
+	height: 20px;
+	background-color: #591FA1;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	z-index: 2;
+}
+
+.timeline-content {
+	/* The box for your text */
+	margin-left: 150px; /* Push the content box to the right of the line */
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.timeline-content h3 {
+	font-family: "Crimson Text", serif;
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+.timeline-content h4 {
+	font-family: "Cormorant", serif;
+	font-size: 20px;
+	margin: 0 0 10px 0;
+	color: #555;
+	font-style: italic;
+}
+
+.timeline-date {
+	position: absolute;
+	left: 0;
+	top: 0; /* Align top edge with the content box's top */
+	width: 100px;
+	text-align: right;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff; /* Changed to white for contrast */
+	font-family: "Cormorant", serif;
+	margin: 0;
+	z-index: 2;
+
+	/* These new properties create the box */
+	background-color: #148F75; /* Use your purple color */
+	padding: 8px;
+	border-radius: 6px;
+	box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* This new rule adds the arrow */
+.timeline-date::after {
+	content: "";
+	position: absolute;
+	top: 50%; /* Center the arrow vertically */
+	left: 100%; /* Attach it to the right side of the box */
+	transform: translateY(-50%);
+	
+	/* This creates the triangle */
+	border: 8px solid transparent;
+	border-left-color: #148F75; /* Match the box background color */
+}
+/* --- START: Added Skill Box Styles --- */
+
+#technicalSkills {
+	padding: 20px; /* Add some spacing inside the section */
+}
+
+.skills-container {
+	display: flex;
+	flex-direction: row; /* Allows boxes to wrap on smaller screens */
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center; /* Centers the boxes */
+	gap: 60px; /* Space between the boxes */
+}
+
+.skill-box {
+	width: 150px;
+	height: 100px;
+	background-color: #591FA1;
+	color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+	/* Center the title (C++, Python) */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative; /* This is CRUCIAL for positioning the description */
+	cursor: pointer; /* Changes the cursor to a 'help' icon */
+	transition: transform 0.3s ease-out;
+}
+
+.skill-box:hover {
+	transform: translate(-50%) scale(1.5); /* Slight zoom effect on hover */
+
+	/* Ensure the hovered box appears above others */
+	z-index: 10;
+}
+
+.skill-box h3 {
+	font-family: "Lucida Console", monospace;
+	font-size: 32px; /* Smaller font size for the box title */
+	font-weight: 600;
+	margin: 0;
+}
+
+.skill-description {
+	visibility: hidden; /* Hide the description by default */
+	opacity: 0;
+
+	width: 250px; /* Set a fixed width for the description box */
+	height: 100%;
+	background-color: #8647CC; /* Dark background for the tooltip */
+	color: #fff; /* White text */
+	text-align: left; /* Align text to the left */
+	border-radius: 0 8px 8px 0;
+	padding: 15px;
+
+	position: absolute; /* Position it relative to the .skill-box */
+	z-index: 1;
+
+	/* Position it "along side" (to the right) of the box */
+	left: 90%; /* 100% is the edge, +10% for spacing */
+
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+
+	transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+/* This is the hover magic: */
+/* When you hover over .skill-box, find the .skill-description inside it and make it visible */
+.skill-box:hover .skill-description {
+	visibility: visible;
+	position: absolute;
+	opacity: 1;
+	z-index: 1;
+	font-size: 14px;
+	font-weight: 800;
+}
+
+/* --- END: Added Skill Box Styles --- */

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>www.soorajbharan.in</title>
+		<link rel="stylesheet" href="./style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Crimson+Text&family=Sofia&family=Cormorant" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<nav class="sideBar collapsed"id="sideBar">
+			<div class="sideBar-header">
+				<img src="./profile_pic.jpeg" style="width:40%; padding:10px; border-radius: 50%">
+
+				<button class="sideBarCloseBtn" onclick="closeSideBar()">&times;</button>
+			</div>
+			<h4>Sooraj Bharan</h4>
+
+			<div style="display:flex; flex-direction:column; color:black; font-size:15px; padding:10px">
+				<a href="#research" style="color:inherit; font-size:inherit; padding:inherit"><i class="fa fa-flask" style="margin-right:20px"></i>RESEARCH</a>
+
+				<a href="#education" style="color:inherit; font-size:inherit; padding:inherit"><i class="fa fa-graduation-cap" style="margin-right:20px"></i>EDUCATION</a>
+
+				<a href="#technicalSkills" style="color:inherit; font-size:inherit; padding:inherit"><i class="fa fa-code" style="margin-right:20px"></i>TECHNICAL SKILLS</a>
+
+				<a href="#contact" style="color:inherit; font-size:inherit; padding:inherit"><i class="fa fa-envelope" style="margin-right:20px"></i>CONTACT</a>
+			</div>
+
+			<div class="icons">
+				<a href="https://github.com/SoorajBharan">
+					<i class="fab fa-github"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/bharansooraj/">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</div>
+		</nav>
+
+		<div class="overlay hidden" id="overlay" onclick="closeSideBar()"></div>
+
+		<div class="main">
+			<header>
+				<button class="main-btn" onclick="openSideBar()">☰</button>
+			</header>
+			<h1> Sooraj Bharan Soman</h1>
+
+			<img src="./profile_pic.jpeg" style="width:20%; padding:10px; position:absolute; top:10px; right:10px">
+		</div>
+
+		<div id="research">
+			<h4>Research</h4>
+		</div>
+
+		<div id="education">
+			<h4>Education</h4>
+
+			<div class="timeline">
+				<div class="timeline-item">
+					<div class="timeline-content">
+						<h3>PhD in Mechanical Engineering</h3>
+						<h4>IIT Bombay, India</h4>
+						<p class="timeline-date">2022 - Present</p>
+					</div>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-content">
+						<h3>Master in Technology</h3>
+						<h4>NIT Raipur, India</h4>
+						<p class="timeline-date">2019 - 2021</p>
+					</div>
+				</div>
+
+				<div class="timeline-item">
+					<div class="timeline-content">
+						<h3>Bachelor in Mechanical Engineering</h3>
+						<h4>College of Engineering, Adoor, India(CUSAT)</h4>
+						<p class="timeline-date">2014-2018</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="technicalSkills">
+			<h4>Technical Skills</h4>
+
+			<div class="skills-container">
+				<div class="skill-box">
+					<h3>C++</h3>
+					<p class="skill-description">ExaDG, deal.II, OpenFOAM</p>
+				</div>
+
+				<div class="skill-box">
+					<h3>Python</h3>
+					<p class="skill-description">Data viscualisation(paraview), Data management, scipy.</p>
+				</div>
+
+				<div class="skill-box">
+					<h3>LaTeX</h3>
+					<p class="skill-description">Document preparation, Beamer presentation and plotting</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="contact" id="contact">
+			<h4>Contact Me</h4>
+
+			<div class="contactRow">
+				<div id="contactBox" style="background-color:teal">
+					<p><i class="fa fa-envelope"></i></p>
+					<p>bharansooraj@gmail.com</p>
+				</div>
+
+				<div id="contactBox" style="background-color:#0CC5B9">
+					<p><i class="fa fa-map-marker"></i></p>
+					<p>SATANIC Lab,<br> IIT Bombay</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
