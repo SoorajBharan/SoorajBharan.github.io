@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="assets/css/glightbox.min.css" />
 
   <link rel="stylesheet" href="style.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,7 +59,7 @@
                   <a class="page-scroll" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#publications">Publications</a>
+                  <a class="page-scroll" href="#research">Research</a>
                 </li>
                 <li class="nav-item">
                   <a class="page-scroll" href="#contact">Contact</a>
@@ -84,15 +86,12 @@
             I am a research scholar in Mechanical Engineering department at IIT Bombay. My research focuses on numerical modelling, high performance computing, and computational fluid dynamics. I specialize in developing advanced computational methods for solving Navier-Stokes equations and implementing efficient algorithms for high-performance computing environments.
           </p>
           <div class="social-links" style="padding-top: 20px;">
-            <a href="javascript:void(0)" title="Google Scholar">
-              <img src="assets/images/google-scholar.png" alt="Google Scholar" style="width: 32px; height: 32px; margin-right: 12px;" />
-            </a>
-            <a href="javascript:void(0)" title="ORCID">
-              <img src="assets/images/orcid.png" alt="ORCID" style="width: 32px; height: 32px; margin-right: 12px;" />
-            </a>
-            <a href="javascript:void(0)" title="Twitter">
-              <img src="assets/images/twitter.png" alt="Twitter" style="width: 31px; height: 31px;" />
-            </a>
+                <a href="https://github.com/SoorajBharan" title="Github">
+                  <i class="fab fa-github" style="font-size: 32px; color: white;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bharansooraj/" title="LinkedIn">
+                  <i class="fab fa-linkedin" style="font-size: 32px; color: white;"></i>
+                </a>
           </div>
         </div>
       </div>
@@ -170,24 +169,25 @@
           <!-- Accordion Sections -->
           <div class="accordion-sections mt-5" id="academicAccordion">
             
+            <h2 class="section-title">Skills</h2>
             <!-- Awards Accordion -->
             <div class="accordion-item mb-3">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#awards-content" aria-expanded="false" aria-controls="awards-content">
                   <i class="accordion-icon me-3"></i>
-                  Skills
+                  PDE Solvers
                 </button>
               </h3>
               <div id="awards-content" class="accordion-collapse collapse" data-bs-parent="#academicAccordion">
                 <div class="accordion-body">
                   <div class="award-item">
-                    <span class="year-bold">C++</span> ExaDG, deal.II, OpenFOAM
+                    <span class="year-bold">ExaDG</span> 
                   </div>
                   <div class="award-item">
-                    <span class="year-bold">Python</span> Data viscualisation(paraview), Data management, scipy
+                    <span class="year-bold">deal.II</span> 
                   </div>
                   <div class="award-item">
-                    <span class="year-bold">LaTeX</span> Document preparation, Beamer presentation and plotting
+                    <span class="year-bold">OpenFOAM</span> 
                   </div>
                 </div>
               </div>
@@ -198,13 +198,19 @@
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#talks-content" aria-expanded="false" aria-controls="talks-content">
                   <i class="accordion-icon me-3"></i>
-                  Conferences and Workshops
+                    Programming Languages
                 </button>
               </h3>
               <div id="talks-content" class="accordion-collapse collapse" data-bs-parent="#academicAccordion">
                 <div class="accordion-body">
                   <div class="talk-item">
-                    <span class="year-bold">2024</span> Speaker - International Conference
+                    <span class="year-bold">C++</span> 
+                  </div>
+                  <div class="talk-item">
+                    <span class="year-bold">Python</span> 
+                  </div>
+                  <div class="talk-item">
+                    <span class="year-bold">bash script</span> 
                   </div>
                 </div>
               </div>
@@ -215,16 +221,25 @@
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#community-content" aria-expanded="false" aria-controls="community-content">
                   <i class="accordion-icon me-3"></i>
-                  Community
+                  CAD & Graphics Software
                 </button>
               </h3>
               <div id="community-content" class="accordion-collapse collapse" data-bs-parent="#academicAccordion">
                 <div class="accordion-body">
                   <div class="community-item">
-                    <span class="year-bold">2023</span> Review Editor - Journal of 
+                    <span class="year-bold">FreeCAD</span> 
                   </div>
                   <div class="community-item">
-                    <span class="year-bold">2021</span> Volunteer Coordinator - 
+                    <span class="year-bold">gmsh</span>
+                  </div>
+                  <div class="community-item">
+                    <span class="year-bold">ParaView</span>
+                  </div>
+                  <div class="community-item">
+                    <span class="year-bold">VisIt</span>
+                  </div>
+                  <div class="community-item">
+                    <span class="year-bold">blender</span>
                   </div>
                 </div>
               </div>
@@ -240,11 +255,11 @@
 <!-- End About Area -->
 
  <!-- Start Latest News Area -->
- <div id="publications" class="latest-news-area section">
+ <div id="research" class="latest-news-area section">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="section-title">Publications</h2>
+        <h2 class="section-title">Research</h2>
         <div class="row">
           <div class="col-lg-4 col-md-6 col-12">
             <!-- Single News -->
@@ -253,15 +268,15 @@
                 <a href="#", target="_blank"><img class="thumb" src="assets/images/blog/1.jpg" alt="Blog" /></a>
                 <div class="meta-details">
                   <img class="thumb" src="assets/images/logo.ico" alt="Author" />
-                  <span>Mechanical Engineering</span>
+                  <span>Discontinuous Galerkin for RANS</span>
                 </div>
               </div>
               <div class="content-body">
                 <h4 class="title">
-                  <a href="#", target="_blank"> Paper1 </a>
+                  <a href="#", target="_blank"> ExaDG </a>
                 </h4>
                 <p>
-                  By Soorja Bharan Soman
+                  By Sooraj Bharan Soman
                 </p>
               </div>
             </div>
@@ -304,7 +319,7 @@
         <div class="row">
           <div class="col-12 text-center">
             <p class="copyright-text">
-              <span>© 2025 sooraj bharan soman</span> | a fork of <a href="https://github.com/muhammedrashidx/ScholarSite_4.0" target="_blank" rel="noopener">scholarsite</a>
+              <span>© 2025 sooraj bharan soman</span> 
             </p>
           </div>
         </div>
