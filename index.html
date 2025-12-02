@@ -1,124 +1,348 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>www.soorajbharan.in</title>
-		<link rel="stylesheet" href="./style.css">
-		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Crimson+Text&family=Sofia&family=Cormorant" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-	</head>
+<html lang="en">
 
-	<body>
-		<nav class="sideBar collapsed"id="sideBar">
-			<div class="sideBar-header">
-				<img src="./profile_pic.jpeg" style="width:40%; padding:10px; border-radius: 50%">
+<head>
+  <!--====== Required meta tags ======-->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-				<button class="sideBarCloseBtn" onclick="closeSideBar()">&times;</button>
-			</div>
-			<h4>Sooraj Bharan</h4>
+  <!--====== Title ======-->
+  <title>Sooraj Bharan Soman</title>
 
-			<div style="display:flex; flex-direction:column; color:black; font-size:15px; padding:10px">
-				<a href="#research" style="color:inherit; font-size:inherit; padding:inherit"><i class="fa fa-flask" style="margin-right:20px"></i>RESEARCH</a>
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon" />
 
-				<a href="#education" style="color:inherit; font-size:inherit; padding:inherit"><i class="fa fa-graduation-cap" style="margin-right:20px"></i>EDUCATION</a>
+  <!--====== Bootstrap css ======-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-				<a href="#technicalSkills" style="color:inherit; font-size:inherit; padding:inherit"><i class="fa fa-code" style="margin-right:20px"></i>TECHNICAL SKILLS</a>
+  <!--====== Line Icons css ======-->
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
 
-				<a href="#contact" style="color:inherit; font-size:inherit; padding:inherit"><i class="fa fa-envelope" style="margin-right:20px"></i>CONTACT</a>
-			</div>
+  <!--====== Tiny Slider css ======-->
+  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
 
-			<div class="icons">
-				<a href="https://github.com/SoorajBharan">
-					<i class="fab fa-github"></i>
-				</a>
-				<a href="https://www.linkedin.com/in/bharansooraj/">
-					<i class="fab fa-linkedin"></i>
-				</a>
-			</div>
-		</nav>
+  <!--====== gLightBox css ======-->
+  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
 
-		<div class="overlay hidden" id="overlay" onclick="closeSideBar()"></div>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-		<div class="main">
-			<header>
-				<button class="main-btn" onclick="openSideBar()">☰</button>
-			</header>
-			<h1> Sooraj Bharan Soman</h1>
+<body>
 
-			<img src="./profile_pic.jpeg" style="width:20%; padding:10px; position:absolute; top:10px; right:10px">
-		</div>
+  <!--====== NAVBAR NINE PART START ======-->
 
-		<div id="research">
-			<h4>Research</h4>
-		</div>
+  <section class="navbar-area navbar-nine">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/logo.ico" alt="Sooraj Bharan Soman" style="width: 40px; height: auto;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
+              aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+              <span class="toggler-icon"></span>
+            </button>
 
-		<div id="education">
-			<h4>Education</h4>
+            <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="page-scroll active" href="#hero-area">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#publications">Publications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- navbar -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
 
-			<div class="timeline">
-				<div class="timeline-item">
-					<div class="timeline-content">
-						<h3>PhD in Mechanical Engineering</h3>
-						<h4>IIT Bombay, India</h4>
-						<p class="timeline-date">2022 - Present</p>
-					</div>
-				</div>
+  <!-- Start header Area -->
+<section id="hero-area" class="header-area header-eight">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12 col-12">
+        <div class="header-content">
+          <h1>Sooraj Bharan Soman</h1>
+          <p>
+            I am a research scholar in Mechanical Engineering department at IIT Bombay. My research focuses on numerical modelling, high performance computing, and computational fluid dynamics. I specialize in developing advanced computational methods for solving Navier-Stokes equations and implementing efficient algorithms for high-performance computing environments.
+          </p>
+          <div class="social-links" style="padding-top: 20px;">
+            <a href="javascript:void(0)" title="Google Scholar">
+              <img src="assets/images/google-scholar.png" alt="Google Scholar" style="width: 32px; height: 32px; margin-right: 12px;" />
+            </a>
+            <a href="javascript:void(0)" title="ORCID">
+              <img src="assets/images/orcid.png" alt="ORCID" style="width: 32px; height: 32px; margin-right: 12px;" />
+            </a>
+            <a href="javascript:void(0)" title="Twitter">
+              <img src="assets/images/twitter.png" alt="Twitter" style="width: 31px; height: 31px;" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12">
+        <div class="header-image">
+          <img src="assets/images/header/hero-image.jpeg" alt="#" style="max-width: 60%; height: auto; margin: 0 auto; display: block;" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End header Area -->
 
-				<div class="timeline-item">
-					<div class="timeline-content">
-						<h3>Masters in Technology</h3>
-						<h4>NIT Raipur, India</h4>
-						<p class="timeline-date">2019 - 2021</p>
-					</div>
-				</div>
+<!-- Start About Area -->
+<section id="about" class="about-area academic-profile-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="academic-content">
+          
+          <!-- Research Interests -->
+          <div class="research-interests-section mb-5">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="interests-container">
+              <button class="interest-btn">Computational Modelling</button>
+              <button class="interest-btn">High Performance Computing</button>
+              <button class="interest-btn">Navier-Stokes Equations</button>
+              <button class="interest-btn">Computational Fluid Dynamics</button>
+              <button class="interest-btn">Numerical Methods</button>
+            </div>
+          </div>
 
-				<div class="timeline-item">
-					<div class="timeline-content">
-						<h3>Bachelors in Mechanical Engineering</h3>
-						<h4>College of Engineering, Adoor, India(CUSAT)</h4>
-						<p class="timeline-date">2014-2018</p>
-					</div>
-				</div>
-			</div>
-		</div>
+          <!-- Academic Background -->
+          <div class="academic-section mb-5">
+            <h2 class="section-title">Academic Background</h2>
+            <div class="education-cards">
+              <div class="education-card">
+                <div class="card-content">
+                  <div class="degree-info">
+                    <h4>PhD Mechanical Engineering</h4>
+                    <p>IIT Bombay</p>
+                  </div>
+                  <div class="year-badge">
+                    <span>2022 - Present</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="education-card">
+                <div class="card-content">
+                  <div class="degree-info">
+                    <h4>Masters in Technology</h4>
+                    <p>NIT Raipur</p>
+                  </div>
+                  <div class="year-badge">
+                    <span>2019 - 2021</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="education-card">
+                <div class="card-content">
+                  <div class="degree-info">
+                    <h4>Bachelors in Mechanical Engineering</h4>
+                    <p>College of Engineering, Adoor (CUSAT)</p>
+                  </div>
+                  <div class="year-badge">
+                    <span>2016 - 2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-		<div id="technicalSkills">
-			<h4>Technical Skills</h4>
+          <!-- Accordion Sections -->
+          <div class="accordion-sections mt-5" id="academicAccordion">
+            
+            <!-- Awards Accordion -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#awards-content" aria-expanded="false" aria-controls="awards-content">
+                  <i class="accordion-icon me-3"></i>
+                  Skills
+                </button>
+              </h3>
+              <div id="awards-content" class="accordion-collapse collapse" data-bs-parent="#academicAccordion">
+                <div class="accordion-body">
+                  <div class="award-item">
+                    <span class="year-bold">C++</span> ExaDG, deal.II, OpenFOAM
+                  </div>
+                  <div class="award-item">
+                    <span class="year-bold">Python</span> Data viscualisation(paraview), Data management, scipy
+                  </div>
+                  <div class="award-item">
+                    <span class="year-bold">LaTeX</span> Document preparation, Beamer presentation and plotting
+                  </div>
+                </div>
+              </div>
+            </div>
 
-			<div class="skills-container">
-				<div class="skill-box">
-					<h3>C++</h3>
-					<p class="skill-description">ExaDG, deal.II, OpenFOAM</p>
-				</div>
+            <!-- Talks and Interviews Accordion -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#talks-content" aria-expanded="false" aria-controls="talks-content">
+                  <i class="accordion-icon me-3"></i>
+                  Conferences and Workshops
+                </button>
+              </h3>
+              <div id="talks-content" class="accordion-collapse collapse" data-bs-parent="#academicAccordion">
+                <div class="accordion-body">
+                  <div class="talk-item">
+                    <span class="year-bold">2024</span> Speaker - International Conference
+                  </div>
+                </div>
+              </div>
+            </div>
 
-				<div class="skill-box">
-					<h3>Python</h3>
-					<p class="skill-description">Data viscualisation(paraview), Data management, scipy.</p>
-				</div>
+            <!-- Community Accordion -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#community-content" aria-expanded="false" aria-controls="community-content">
+                  <i class="accordion-icon me-3"></i>
+                  Community
+                </button>
+              </h3>
+              <div id="community-content" class="accordion-collapse collapse" data-bs-parent="#academicAccordion">
+                <div class="accordion-body">
+                  <div class="community-item">
+                    <span class="year-bold">2023</span> Review Editor - Journal of 
+                  </div>
+                  <div class="community-item">
+                    <span class="year-bold">2021</span> Volunteer Coordinator - 
+                  </div>
+                </div>
+              </div>
+            </div>
 
-				<div class="skill-box">
-					<h3>LaTeX</h3>
-					<p class="skill-description">Document preparation, Beamer presentation and plotting</p>
-				</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-			</div>
-		</div>
+<!-- End About Area -->
 
-		<div class="contact" id="contact">
-			<h4>Contact Me</h4>
+ <!-- Start Latest News Area -->
+ <div id="publications" class="latest-news-area section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Publications</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <!-- Single News -->
+            <div class="single-news">
+              <div class="image">
+                <a href="#", target="_blank"><img class="thumb" src="assets/images/blog/1.jpg" alt="Blog" /></a>
+                <div class="meta-details">
+                  <img class="thumb" src="assets/images/logo.ico" alt="Author" />
+                  <span>Mechanical Engineering</span>
+                </div>
+              </div>
+              <div class="content-body">
+                <h4 class="title">
+                  <a href="#", target="_blank"> Paper1 </a>
+                </h4>
+                <p>
+                  By Soorja Bharan Soman
+                </p>
+              </div>
+            </div>
+            <!-- End Single News -->
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Latest News Area -->
 
-			<div class="contactRow">
-				<div id="contactBox" style="background-color:teal">
-					<p><i class="fa fa-envelope"></i></p>
-					<p>bharansooraj@gmail.com</p>
-				</div>
+<!-- Start Cta Area -->
+<section id="contact" class="call-action">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
+        <div class="inner-content">
+          <h2>Contact me</h2>
+          <div class="light-rounded-buttons">
+            <a href="javascript:void(0)" class="btn primary-btn-outline">bharansooraj[at]gmail[dot]com</a>
+          </div>
+          <p style="margin-top: 20px; color: var(--gray-2);">
+            SATANIC Lab, IIT Bombay
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Cta Area -->
 
-				<div id="contactBox" style="background-color:#0CC5B9">
-					<p><i class="fa fa-map-marker"></i></p>
-					<p>SATANIC Lab,<br> IIT Bombay</p>
-				</div>
-			</div>
-		</div>
 
-		<script src="./script.js"></script>
-	</body>
+<!-- Start Footer Area -->
+<footer class="footer-area footer-eleven">
+  <div class="footer-top">
+    <div class="container">
+      <div class="inner-content">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright-text">
+              <span>© 2025 sooraj bharan soman</span> | a fork of <a href="https://github.com/muhammedrashidx/ScholarSite_4.0" target="_blank" rel="noopener">scholarsite</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--/ End Footer Area -->
+
+<a href="#" class="scroll-top btn-hover">
+  <i class="lni lni-chevron-up"></i>
+</a>
+
+<!--====== js ======-->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/glightbox.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/tiny-slider.js"></script>
+
+<script>
+  //===== close navbar-collapse when a  clicked
+  let navbarTogglerNine = document.querySelector(
+    ".navbar-nine .navbar-toggler"
+  );
+  navbarTogglerNine.addEventListener("click", function () {
+    navbarTogglerNine.classList.toggle("active");
+  });
+
+  //========= glightbox
+  GLightbox({
+    'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
+    'type': 'video',
+    'source': 'youtube', //vimeo, youtube or local
+    'width': 900,
+    'autoplayVideos': true,
+  });
+</script>
+
+</body>
+
 </html>
